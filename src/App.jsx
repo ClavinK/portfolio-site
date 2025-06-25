@@ -4,12 +4,15 @@ import Page from "./Page.jsx";
 import "./styles/fonts.css";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Page />,
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Page />,
+      },
+    ],
+    { basename: "/portfolio-site" }
+  );
   return (
     <ChakraProvider value={defaultSystem}>
       <RouterProvider router={router}></RouterProvider>
