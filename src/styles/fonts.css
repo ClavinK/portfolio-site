@@ -1,0 +1,29 @@
+/* src/styles/fonts.css */
+@font-face {
+  font-family: 'FinalFantasy';
+  src: url('../assets/fonts/finalfantasy.woff2') format('truetype'),
+    url('../assets/fonts/finalfantasy.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FF7Pix';
+  src: url('../assets/fonts/FinalFantasyVII.woff2') format('truetype'),
+    url('../assets/fonts/FinalFantasyVII.woff') format('woff');
+}
+
+.ff {
+  font-family: 'FinalFantasy', system-ui, sans-serif;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.ff.ff-home {
+  font-size: 3rem;
+}
+
+.ff7 {
+  font-family: 'FF7Pix', system-ui, sans-serif;
+  color: white;
+  font-size: 5rem;
+}
