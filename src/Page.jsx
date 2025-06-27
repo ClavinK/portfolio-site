@@ -27,13 +27,12 @@ const Page = () => {
         paddingRight={{ base: "0", md: "10vw" }}
         backgroundRepeat="no-repeat"
       >
-        <BlueTextBox>
+        <BlueTextBox id="home">
           <Box display="flex" flexDirection="row" alignItems="center" gap={5}>
             <Image
               src={pfp}
               height={{ base: "120px", md: "220px" }}
               width={{ base: "120px", md: "200px" }}
-              // boxSize={{ base: "15%", md: "15%" }}
               objectFit="cover"
               objectPosition="50% 10%"
             />
@@ -108,7 +107,7 @@ const Page = () => {
             - DATA SCIENCE
           </Text>
         </BlueTextBox>
-        <BlueTextBox>
+        <BlueTextBox id="about">
           <Text
             color="white"
             fontFamily="'FF7Pix', system-ui, sans-serif"
@@ -129,7 +128,7 @@ const Page = () => {
             on Final Fantasy VII.
           </Text>
         </BlueTextBox>
-        <BlueTextBox>
+        <BlueTextBox id="projects">
           <Text
             color="white"
             fontFamily="'FF7Pix', system-ui, sans-serif"
@@ -209,7 +208,7 @@ const Page = () => {
             to try something new using AI.
           </Text>
         </BlueTextBox>
-        <BlueTextBox>
+        <BlueTextBox id="contact">
           <Text
             color="white"
             fontFamily="'FF7Pix', system-ui, sans-serif"

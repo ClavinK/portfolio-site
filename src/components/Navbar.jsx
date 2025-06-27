@@ -1,15 +1,13 @@
-import { Flex, Box, Link } from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 import React from "react";
 import "../styles/fonts.css";
 
 const Navbar = () => {
-  //   const [show, setShow] = useState(false);
-
   return (
     <Box
       shadow="md"
       position="fixed"
-      // background="#d6d6d6"
       background="white"
       top={0}
       left={0}
@@ -22,13 +20,45 @@ const Navbar = () => {
         gap={{ base: 2, md: 8 }}
         justify="space-between"
         align="center"
-        px={{ base: 4, md: 16 }} // Responsive horizontal padding
+        px={{ base: 4, md: 16 }}
         py={2}
       >
-        <Link className="ff ff-home">HOME</Link>
-        <Link className="ff">ABOUT</Link>
-        <Link className="ff">PROJECTS</Link>
-        <Link className="ff">CONTACT</Link>
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          offset={-100}
+          className="ff ff-home"
+        >
+          HOME
+        </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          offset={-100}
+          className="ff"
+        >
+          ABOUT
+        </Link>
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          offset={-100}
+          className="ff"
+        >
+          PROJECTS
+        </Link>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          offset={-100}
+          className="ff"
+        >
+          CONTACT
+        </Link>
       </Flex>
     </Box>
   );
